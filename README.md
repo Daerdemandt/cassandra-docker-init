@@ -1,2 +1,2 @@
 # cassandra-docker-init
-One-shot container to properly init/seed your Cassandra
+Cassandra container that supports self-initing similar to that of Postgres one.
