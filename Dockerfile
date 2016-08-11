@@ -10,5 +10,5 @@ RUN head --lines=-2 /docker-entrypoint.sh > /docker-entrypoint.tmp; \
     chmod +x /docker-entrypoint.sh
 
 # This is what should go to child images
-ADD init.cql /docker-entrypoint-init.d/
+ONBUILD ADD cassandra-fixtures/* /docker-entrypoint-init.d/
 
